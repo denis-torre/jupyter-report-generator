@@ -244,7 +244,7 @@ run_characteristic_direction <- function(rawcount_dataframe, design_dataframe, c
 	cd_results <- chdir(control_dataframe_filtered, experimental_dataframe_filtered, common_genes)
 
 	# Convert to dataframe
-	characteristic_direction_dataframe <- data.frame(CD=cd_results)
+	characteristic_direction_dataframe <- data.frame(CD=-cd_results)
 
 	# Return results
 	return(characteristic_direction_dataframe)
